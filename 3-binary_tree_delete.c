@@ -1,6 +1,7 @@
 #include "binary_trees.h"
 /**
- * 
+ * binary_tree_delete - delete the tree
+ * @tree: tree node to check
 */
 void binary_tree_delete(binary_tree_t *tree)
 {
