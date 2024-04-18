@@ -34,7 +34,7 @@ int full(const binary_tree_t *tree)
 	right = full(tree->right);
 	if (left != right)
 		return (0);
-	if (tree->left == NULL && tree->left == NULL)
+	if (tree->left == NULL && tree->right == NULL)
 		return (1);
 	else if (tree->left != NULL && tree->left != NULL)
 		return (1);
