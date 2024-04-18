@@ -28,8 +28,8 @@ int full(const binary_tree_t *tree)
 
 	if (tree == NULL)
 		return (0);
-	left = binary_tree_is_full(tree->left);
-	right = binary_tree_is_full(tree->right);
+	left = full(tree->left);
+	right = full(tree->right);
 	if (left != right)
 		return (0);
 	if (tree->left == NULL && tree->left == NULL)
