@@ -10,11 +10,11 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 
 	if (tree == NULL)
 		return (0);
-	right = height(tree->right);
+	right = height(tree->right);/*recursive look through the tree*/
 	left = height(tree->left);
-	if ((left - right) == 0)
+	if ((left - right) == 0)/*checks the balace of the tree*/
 	{
-		if (full(tree) == 1)
+		if (full(tree) == 1)/*checks if the tree*/
 			return (1);
 	}
 	return (0);
